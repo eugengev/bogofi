@@ -47,9 +47,16 @@ $(function() {
 //-----------------------------------------------------------------------------
     $('input[placeholder], textarea[placeholder]').placeholder();
 
-
+    $('.js-slider-main').slick({
+        dots: false,
+        infinite: true,
+        arrows: false,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
 });
-
+/*
 var map;
 function initMap() {
     var myLatLng = {lat: 49.4225715, lng: 26.9763337};
@@ -68,5 +75,5 @@ function initMap() {
         map: map,
         title: 'ТОчка на карте'
     });
-}
+} */
 
